@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true,
+        "noEmit": true,
+        "strict": true,
+        "target": "esnext",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "dist",
+        "strictNullChecks": true,
+        "skipLibCheck": true,
+        "noImplicitAny": true
+    },
+    "exclude": ["node_modules", "dist"],
+    "include": ["src/**/*"]
+}
