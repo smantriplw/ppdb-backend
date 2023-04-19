@@ -10,7 +10,13 @@
         "outDir": "dist",
         "strictNullChecks": true,
         "skipLibCheck": true,
-        "noImplicitAny": true
+        "noImplicitAny": true,
+        "baseUrl": ".",
+        "paths": {
+            "@routes/*": ["src/routes/*"],
+            "@controllers/*": ["src/controllers/*"],
+            "@logger": ["src/logger.ts"],
+        }
     },
     "exclude": ["node_modules", "dist"],
     "include": ["src/**/*"]
