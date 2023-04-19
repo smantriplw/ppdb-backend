@@ -12,7 +12,7 @@ if (process.env.NODE_ENV === 'development') {
 const serverPort = parseInt(process.env.PORT ?? '3000', 10) ?? 3000;
 const app = createFastify({
 	trustProxy: true,
-	logger: process.env.NODE_ENV === 'development' ? logger : false,
+	logger,
 });
 
 async function bootstrap() {
