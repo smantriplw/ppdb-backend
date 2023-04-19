@@ -4,9 +4,11 @@
   "description": "PPDB Backend using Nodejs, TypeORM, and MySQL",
   "main": "dist/index.js",
   "scripts": {
-    "lint": "eslint --ext .ts src",
+    "lint": "eslint --ext .ts src --fix",
     "build": "tsup",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "dev": "NODE_ENV=development node dist/index.js",
+    "start": "NODE_ENV=production node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,8 @@
   "dependencies": {
     "@fastify/jwt": "^6.7.1",
     "dotenv": "^16.0.3",
-    "fastify": "^4.15.0"
+    "fastify": "^4.15.0",
+    "pino": "^8.11.0",
+    "pino-pretty": "^10.0.0"
   }
 }
